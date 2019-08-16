@@ -724,16 +724,15 @@ h6 {
 .site-banner-desc {
     margin: 5px 0 0 0;
     padding: 0;
-    font-size: 2.4rem;
-    line-height: 1.3em;
-    opacity: 0.7;
+    font-size: 2rem;
+    line-height: 1.71em;
 }
 
 .site-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0 0 0;
+    background-color: #0F4C59;
 }
 
 .site-nav-left {
