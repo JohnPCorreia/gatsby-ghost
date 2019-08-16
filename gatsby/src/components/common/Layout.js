@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
+import EhHeader from '../Header';
+import EhHero from '../Hero';
+
 import Logopolis from "../..//assets/images/logos/fundopolis-navbar.js";
 import LogopolisBG from "../../assets/images/logos/fundopolis-navbar-bg.js";
 import { Navigation } from ".";
@@ -37,23 +40,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
             <div className='viewport'>
                 <div className='viewport-top'>
-                    {/* The main header section on top of the screen */}
-                    <nav className='site-nav'>
-                        <div className='site-nav-left'>
-                            <LogopolisBG height={48} width={configNavbar()} />
-                            <Link to='/'>
-                                <Logopolis left={configNavbar()} />
-                            </Link>
-                        </div>
-                        <div className='site-nav-right'>
-                            {/* The navigation items as setup in Ghost */}
-                            <Navigation
-                                data={site.navigation}
-                                navClass='site-nav-item'
-                            />
-                        </div>
-                    </nav>
-                    {isHome ? (
+
+                    <EhHeader />
+                    {isHome ? <EhHero /> : null}
+                    {/* {isHome ? (
                         <header
                             className='site-head'
                             style={{
@@ -78,7 +68,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 }
                             </div>
                         </header>
-                    ) : null}
+                    ) : null} */}
                     <main className='site-main'>
                         {/* All the main content gets inserted here, index.js, post.js */}
                         {children}

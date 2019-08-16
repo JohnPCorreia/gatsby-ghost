@@ -1,0 +1,169 @@
+header nav {
+  width: 100%;
+  min-height: 48px;
+  background-color: #0f4c59;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav .nav-logo-wrap .nav-logo {
+  position: absolute;
+  top: 4px;
+  left: 42px;
+  z-index: 10;
+  width: 216px;
+  height: 56px;
+  object-fit: contain;
+}
+
+header nav .nav-logo-wrap .nav-logo-clip-wrap {
+  width: 362px;
+  max-height: 48px;
+  position: relative;
+}
+
+header nav .nav-content-wrap .nav-content-desktop {
+  display: block;
+}
+header nav .nav-content-wrap .nav-content-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 959px) {
+  header nav .nav-content-wrap .nav-content-desktop {
+    display: none;
+  }
+  header nav .nav-content-wrap .nav-content-mobile {
+    display: block;
+  }
+}
+
+header nav .nav-content-wrap .nav-content-desktop .nav-content-item-wrap {
+  color: rgb(220, 232, 228);
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: -0.5px;
+  margin: 8px 16px;
+}
+
+header nav .nav-content-wrap .nav-content-desktop .nav-content-item-wrap div {
+  margin: 0 32px 0 0;
+  cursor: pointer;
+}
+
+header nav .nav-content-wrap .nav-content-desktop {
+  max-height: 48px;
+}
+
+header
+  nav
+  .nav-content-wrap
+  .nav-content-desktop
+  .nav-content-item-wrap
+  button {
+  background-color: #0f4c59;
+  border: 1px solid rgb(220, 232, 228);
+  border-radius: 3px;
+  color: rgb(220, 232, 228);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: -0.5px;
+  padding: 4px 16px;
+}
+
+.nav-content-item-dropdown {
+  color: rgb(111, 120, 119);
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: -0.5px;
+  list-style-type: none;
+  list-style-position: initial;
+  list-style-image: initial;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.701961);
+  position: absolute;
+  margin-top: 2rem;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+  animation-delay: initial;
+  animation-iteration-count: initial;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
+  animation-name: eMLfYp;
+  z-index: 10;
+}
+
+.nav-content-item-dropdown::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: auto;
+  left: 10px;
+  top: -10px;
+  width: 0;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.7) transparent;
+}
+
+.nav-content-item-dropdown a {
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: -0.5px;
+  display: block;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+  text-decoration: none;
+}
+
+.nav-content-item-dropdown a:hover {
+  color: rgb(55, 157, 171);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: color 200ms linear, background-color 200ms linear;
+}
+
+.nav-content-mobile-inner {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 5px;
+  margin-top: 8px;
+  margin-right: 24px;
+  height: 25px;
+  width: 46px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-image: initial;
+  border-radius: 3px;
+}
+
+.nav-content-mobile-inner svg {
+  overflow: hidden;
+  fill: #fff;
+  height: 24px;
+  width: 24px;
+}
