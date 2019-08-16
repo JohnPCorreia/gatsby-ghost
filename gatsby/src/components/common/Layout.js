@@ -12,6 +12,7 @@ import { Navigation } from ".";
 
 // Styles
 import "../../styles/app.css";
+import "../layout.css";
 
 /**
  * Main layout component

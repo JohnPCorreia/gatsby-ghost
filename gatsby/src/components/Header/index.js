@@ -313,7 +313,7 @@ const Header = ({ siteTitle }) => {
               }}
             >
               <button>Login/Sign Up</button>
-              {state.submenu.profile && <div>TEST</div>}
+              {state.submenu.profile}
             </div>
           </div>
           <div className="nav-content-mobile">
