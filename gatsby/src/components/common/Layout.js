@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
 import EhHeader from '../Header';
+import NavBar from '../NavBar/nav-bar';
 import EhHero from '../Hero';
 
 import Logopolis from "../..//assets/images/logos/fundopolis-navbar.js";
@@ -42,7 +43,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <div className='viewport'>
                 <div className='viewport-top'>
 
-                    <EhHeader />
+                    {/* <EhHeader /> */}
                     {isHome ? <EhHero /> : null}
                     {/* {isHome ? (
                         <header

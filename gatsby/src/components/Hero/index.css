@@ -1,3 +1,6 @@
+.hero {
+  margin-bottom: 20px;
+}
 .hero-inner {
   display: flex;
   flex-direction: column;
