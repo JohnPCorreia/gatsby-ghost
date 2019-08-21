@@ -69,7 +69,7 @@
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 5px 0px;
   color: rgb(55, 157, 171);
-  font-size: 0.875rem;
+  font-size: 1.2rem;
   height: 48px;
   font-family: PlutoSans;
   -webkit-box-pack: center;
@@ -83,6 +83,6 @@
   border-style: solid;
   border-color: rgb(55, 157, 171);
   border-image: initial;
-  padding: 0px 1.5rem;
+  padding: 0px 1.7rem;
   transition: box-shadow 200ms linear 0s;
 }

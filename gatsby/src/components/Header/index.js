@@ -250,7 +250,7 @@ const Header = ({ siteTitle }) => {
                                     <a href='https://prod.fundopolis.com/faq#funder'>
                                         Funder FAQ
                                     </a>
-                                    <a href='#'>Funder Journey</a>
+                                    {/* <a href='#'>Funder Journey</a> */}
                                     <a href='https://prod.fundopolis.com/invested'>
                                         List of Raises
                                     </a>
@@ -276,7 +276,7 @@ const Header = ({ siteTitle }) => {
                                     <a href='https://prod.fundopolis.com/faq#issuer'>
                                         Issuer FAQ
                                     </a>
-                                    <a href='#'>Issuer Journey</a>
+                                    {/* <a href='#'>Issuer Journey</a> */}
                                     <a href='https://prod.fundopolis.com/wizard'>
                                         Start a Raise
                                     </a>
@@ -294,7 +294,7 @@ const Header = ({ siteTitle }) => {
                                     }
                                 });
                             }}>
-                            <div>
+                            <div className="about">
                                 <p>About Us</p>
                             </div>
                             {state.submenu.aboutUs && (
@@ -311,10 +311,13 @@ const Header = ({ siteTitle }) => {
                                     <a href='https://prod.fundopolis.com/aboutus#vision'>
                                         Our Vision
                                     </a>
+                                    <a href='https://prod.fundopolis.com/faq#guides'>
+                                        Education
+                                    </a>
                                 </ul>
                             )}
                         </div>
-                        <div
+                        {/* <div
               className="nav-content-item-wrap"
               onClick={() => {
                 const { profile } = state.submenu
@@ -328,7 +331,7 @@ const Header = ({ siteTitle }) => {
             >
               <button>Login/Sign Up</button>
               {state.submenu.profile}
-            </div>
+            </div> */}
                     </div>
                     <div className='nav-content-mobile'>
                         <div className='nav-content-mobile-inner'>

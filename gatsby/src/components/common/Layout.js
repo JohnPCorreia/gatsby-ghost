@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { Link, StaticQuery, graphql } from "gatsby";
 import EhHeader from '../Header';
-import NavBar from '../NavBar/nav-bar';
 import EhHero from '../Hero';
 
 import Logopolis from "../..//assets/images/logos/fundopolis-navbar.js";
@@ -25,7 +24,6 @@ import "../layout.css";
  */
 const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
     const site = data.allGhostSettings.edges[0].node;
-    console.log(isHome);
     // const twitterUrl = site.twitter
     //     ? `https://twitter.com/${site.twitter.replace(/^@/, ``)}`
     //     : null;
@@ -39,11 +37,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type='text/css'>{`${site.codeinjection_styles}`}</style>
                 <body className={bodyClass} />
             </Helmet>
-
             <div className='viewport'>
                 <div className='viewport-top'>
-
-                    {/* <EhHeader /> */}
+                    <EhHeader />
                     {isHome ? <EhHero /> : null}
                     {/* {isHome ? (
                         <header

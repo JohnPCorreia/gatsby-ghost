@@ -28,7 +28,7 @@ const Hero = () => {
                                 "_self"
                             );
                         }}>
-                        JOIN
+                        Join
                     </button>
                 </div>
             </section>
