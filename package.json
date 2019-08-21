@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "gatsby-source-ghost": "^3.4.4",
-    "react": "^16.9.0",
-    "react-container-dimensions": "^1.4.1",
-    "react-dom": "^16.9.0",
-    "styled-components": "^4.3.2"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "dev": "cd gatsby && gatsby develop",
